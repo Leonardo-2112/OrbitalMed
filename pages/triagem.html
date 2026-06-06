@@ -115,6 +115,12 @@
             </li>
           </ul>
         </article>
+        <form class="triage-form fade-in" id="triageForm">
+          <label for="symptoms">Digite os sintomas</label>
+          <textarea id="symptoms" name="symptoms" rows="6"placeholder="Ex: febre, falta de ar, dor no peito"></textarea>
+          <button class="btn btn-primary" type="submit">Classificar urgência</button>
+          <div class="triage-result" id="triageResult" role="status" aria-live="polite"></div>
+        </form>
 
       </div>
     </section>    
