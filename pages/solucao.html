@@ -1,11 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solucao | OrbitalMed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navegacao principal">
+      <a class="brand" href="index.html">OrbitalMed</a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li>
+            <a href="index.html">Início</a>
+        </li>
+        <li>
+            <a href="sobre.html">Sobre</a>
+        </li>
+        <li>
+            <a href="solucao.html" class="active">Solução</a>
+        </li>
+        <li>
+            <a href="triagem.html">Triagem</a>
+        </li>
+        <li>
+            <a href="faq.html">FAQ</a>
+        </li>
+        <li>
+            <a href="integrantes.html">Equipe</a>
+        </li>
+        <li>
+            <a href="contato.html">Contato</a>
+        </li>
+      </ul>
+    </nav>
+  </header>    
+  <main>
+    <section class="page-hero">
+      <div class="container fade-in">
+        <p class="eyebrow">A Solução</p>
+        <h1>Sistema OrbitalMed</h1>
+        <p>Um fluxo simples, conectado e orientado por prioridade clínica.</p>
+      </div>
+    </section>
+    <section class="section-space">
+      <div class="container">
+        <div class="section-heading fade-in">
+            <h2>Fluxo de atendimento</h2>
+        </div>
+        <div class="flow-diagram fade-in" aria-label="Fluxo Paciente, ACS, Satelite e Medico">
+          <div class="flow-node">Paciente</div>
+          <div class="flow-arrow">&rarr;</div>
+          <div class="flow-node">ACS</div>
+          <div class="flow-arrow">&rarr;</div>
+          <div class="flow-node satellite-node">Satélite</div>
+          <div class="flow-arrow">&rarr;</div>
+          <div class="flow-node">Médico</div>
+        </div>
+      </div>
+    </section>
+    <section class="section-space alt-section">
+        <div class="container split-layout">
+        <article class="content-block fade-in">
+          <h2>Passo a passo</h2>
+          <ol class="steps-list">
+            <li>Paciente procura o ponto de saúde comunitário.</li>
+            <li>ACS registra sintomas, sinais vitais e histórico básico.</li>
+            <li>O sistema envia os dados por satélite LEO.</li>
+            <li>Médico remoto analisa, atende e orienta o cuidado.</li>
+            <li>Casos graves são priorizados para remoção ou atendimento imediato.</li>
+          </ol>
+        </article>
+        <article class="content-block fade-in">
+          <h2>Benefícios da tecnologia LEO</h2>
+          <ul class="feature-list">
+            <li>Menor latência que satélites mais distantes.</li>
+            <li>Cobertura ampla para locais sem rede terrestre.</li>
+            <li>Instalação mais flexúvel em bases comunitárias.</li>
+            <li>Conectividade resiliente para dados de saúde.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section class="section-space">
+      <div class="container">
+        <div class="section-heading fade-in">
+            <h2>Antes vs Depois</h2>
+        </div>
+        <div class="comparison-grid">
+          <article class="comparison-card fade-in">
+            <h3>Antes</h3>
+            <p>Deslocamentos longos, triagem tardia, baixa conectividade e dificuldade para acompanhar pacientes crônicos.</p>
+          </article>
+          <article class="comparison-card featured fade-in">
+            <h3>Depois da OrbitalMed</h3>
+            <p>Triagem local, contato com médico remoto, priorizacao de urgências e orientacao mais rápida para a comunidade.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+        <div class="container footer-content">
+            <p>OrbitalMed - Projeto acadêmico FIAP</p>
+            <p>Grupo GaiaTech</p>
+        </div>
+  </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
