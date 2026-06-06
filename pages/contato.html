@@ -45,6 +45,28 @@
         </section>
         <section class="section-space">
             <div class="container contact-layout">
+                <!-- Formulário -->
+                <form class="contact-form fade-in" id="contactForm" novalidate>
+                    <!-- Nome -->
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" autocomplete="name">
+                    <span class="error-message" data-error-for="name"></span>
+                    <!-- Email -->
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" autocomplete="email">
+                    <span class="error-message" data-error-for="email"></span>
+                    <!-- Assunto -->
+                    <label for="subject">Assunto</label>
+                    <input type="text" id="subject" name="subject">
+                    <span class="error-message" data-error-for="subject"></span>
+                    <!-- Mensagem -->
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="6"></textarea>
+                    <span class="error-message" data-error-for="message"></span>
+                    <!-- Botão(Enviar Mensagem) -->
+                    <button class="btn btn-primary" type="submit">Enviar mensagem</button>
+                    <p class="form-success" id="formSuccess" role="status"></p>
+                </form>
             </div>
         </section>
     </main>
