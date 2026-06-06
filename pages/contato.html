@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | OrbitalMed</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Orbitron:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navegacao principal">
+            <a class="brand" href="index.html">OrbitalMed</a>
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="solucao.html">Solução</a></li>
+                <li><a href="triagem.html">Triagem</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="integrantes.html">Equipe</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container fade-in">
+                <p class="eyebrow">Contato</p>
+                <h1>Fale com a GaiaTech</h1>
+                <p>Envie sua mensagem sobre a OrbitalMed ou sobre o projeto acadêmico.</p>
+            </div>
+        </section>
+        <section class="section-space">
+            <div class="container contact-layout">
+                <!-- Formulário -->
+                <form class="contact-form fade-in" id="contactForm" novalidate>
+                    <!-- Nome -->
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" autocomplete="name">
+                    <span class="error-message" data-error-for="name"></span>
+                    <!-- Email -->
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" autocomplete="email">
+                    <span class="error-message" data-error-for="email"></span>
+                    <!-- Assunto -->
+                    <label for="subject">Assunto</label>
+                    <input type="text" id="subject" name="subject">
+                    <span class="error-message" data-error-for="subject"></span>
+                    <!-- Mensagem -->
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="6"></textarea>
+                    <span class="error-message" data-error-for="message"></span>
+                    <!-- Botão(Enviar Mensagem) -->
+                    <button class="btn btn-primary" type="submit">Enviar mensagem</button>
+                    <p class="form-success" id="formSuccess" role="status"></p>
+                </form>
+                <!-- Aside -->
+                <aside class="contact-info fade-in">
+                    <h2>Informações</h2>
+                    <p><strong>E-mail:</strong> orbitalmed@gmail.com.br</p>
+                    <p><strong>Localização:</strong> São Paulo - SP</p>
+                    <p><strong>Projeto:</strong> FIAP - GaiaTech</p>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+     <footer class="site-footer">
+        <div class="container footer-content">
+            <p>OrbitalMed - Projeto acadêmico FIAP</p>
+            <p>Grupo GaiaTech</p>
+        </div>
+    </footer>
+    <!-- Link-JS -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
