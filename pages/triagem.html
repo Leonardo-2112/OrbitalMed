@@ -1,11 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Triagem | OrbitalMed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Orbitron:wght@500;700;900&display=swap"rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navegacao principal">
+      <a class="brand" href="index.html">OrbitalMed</a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu"aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li>
+            <a href="index.html">Início</a>
+        </li>
+        <li>
+            <a href="sobre.html">Sobre</a>
+        </li>
+        <li>
+            <a href="solucao.html">Solução</a>
+        </li>
+        <li>
+            <a href="triagem.html" class="active">Triagem</a>
+        </li>
+        <li>
+            <a href="faq.html">FAQ</a>
+        </li>
+        <li>
+            <a href="integrantes.html">Equipe</a>
+        </li>
+        <li>
+            <a href="contato.html">Contato</a>
+        </li>
+      </ul>
+    </nav>
+  </header>  
+  <main>
+    <section class="page-hero">
+      <div class="container fade-in">
+        <p class="eyebrow">Sistema de Triagem</p>
+        <h1>Triagem por sintomas</h1>
+        <p>Simulação educativa para classificar a urgência inicial a partir dos sintomas informados.</p>
+      </div>
+    </section>
+    <section class="section-space">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <h2>Niveis de urgência</h2>
+          <p>A classificação ajuda o ACS a priorizar os casos antes do atendimento remoto.</p>
+        </div>
+
+        <div class="urgency-table fade-in" role="table" aria-label="Niveis de urgencia">
+          <div role="row" class="table-head">
+            <span>Nível</span>
+            <span>Indicação</span>
+            <span>Sintomas comuns</span>
+          </div> 
+        </div>
+          <div role="row" class="level-low">
+            <span class="level-label">
+                <span class="urgency-icon icon-low">🟢</span>Baixa
+            </span>
+            <span>Monitoramento</span>
+            <span>Tosse leve, dor leve, coriza</span>
+        </div>
+        <div role="row" class="level-medium">
+            <span class="level-label">
+              <span class="urgency-icon icon-medium">🟡</span>Média
+            </span>
+            <span>Avaliacao médica</span>
+            <span>Febre, vômito, dor moderada</span>
+        </div>
+        <div role="row" class="level-high">
+            <span class="level-label">
+              <span class="urgency-icon icon-high">🔴</span>Alta
+            </span>
+            <span>Atendimento prioritario</span>
+            <span>Falta de ar, dor no peito, desmaio</span>
+        </div>
+        <div role="row" class="level-critical">
+            <span class="level-label">
+              <span class="urgency-icon icon-critical">🚨</span>Crítica
+            </span>
+            <span>Emergência imediata</span>
+            <span>Convulsão, sangramento intenso, inconsciencia</span>
+        </div>  
+      </div>
+    </section>
+    <section class="section-space alt-section">
+      <div class="container split-layout">
+        <article class="content-block fade-in">
+          <h2>Sintomas por categoria</h2>
+          <ul class="feature-list">
+            <li>
+                <strong>Baixa:</strong> coriza, tosse leve, dor leve, cansaço leve.
+            </li>
+            <li>
+                <strong>Média:</strong> febre, vômito, diarréia, dor moderada.
+            </li>
+            <li>
+                <strong>Alta:</strong> falta de ar, dor no peito, desmaio, confusão.
+            </li>
+            <li>
+                <strong>Critica:</strong> convulsão, sangramento intenso, inconsciencia, parada respiratória.
+            </li>
+          </ul>
+        </article>
+        <form class="triage-form fade-in" id="triageForm">
+          <label for="symptoms">Digite os sintomas</label>
+          <textarea id="symptoms" name="symptoms" rows="6"placeholder="Ex: febre, falta de ar, dor no peito"></textarea>
+          <button class="btn btn-primary" type="submit">Classificar urgência</button>
+          <div class="triage-result" id="triageResult" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>    
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>OrbitalMed - Projeto academico FIAP</p>
+      <p>Grupo GaiaTech</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>    
 </body>
 </html>
