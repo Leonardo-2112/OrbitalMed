@@ -43,3 +43,16 @@ function menuMobile() {
       botao.setAttribute("aria-label", "Fechar menu");
     }
   });
+
+   // Quando qualquer link do menu for clicado, fecha o menu
+  var links = menu.querySelectorAll("a");
+
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function () {
+      menu.classList.remove("open");
+      botao.classList.remove("open");
+      botao.setAttribute("aria-expanded", "false");
+      botao.setAttribute("aria-label", "Abrir menu");
+    });
+  }
+}
