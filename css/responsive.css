@@ -50,3 +50,25 @@
   .urgency-table [role="row"] { grid-template-columns: 1fr; padding: 0.75rem 0; }
   .urgency-table span { padding: 0.25rem 1rem; }
 }
+
+/* --- Mobile pequeno (até 480px) --- */
+@media (max-width: 480px) {
+  .navbar { min-height: 66px; }
+  .nav-menu { top: 66px; }
+  .brand { font-size: 1.05rem; }
+  .hero { min-height: 640px; }
+  .page-hero { padding: 86px 0 52px; }
+  .section-space { padding: 58px 0; }
+  h1 { font-size: 2.25rem; }
+  h2 { font-size: 1.55rem; }
+  .hero-text, .page-hero p { font-size: 1rem; }
+  .signal-panel, .device-panel { min-height: 260px; }
+  .radar { width: 160px; }
+  .stat-card strong { font-size: 2rem; }
+ 
+  /* Padding interno dos cards menor */
+  .contact-form, .contact-info, .triage-form,
+  .info-card, .team-card, .comparison-card, .stat-card { padding: 1.1rem; }
+ 
+  .flow-node { min-height: 78px; }
+}
