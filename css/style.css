@@ -130,3 +130,14 @@ h3 {
   backdrop-filter: blur(16px);
   /* efeito de vidro fosco */
 }
+
+/* Barra interna do header (logo + links) */
+.navbar {
+  width: min(1200px, calc(100% - 40px));
+  min-height: 74px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
