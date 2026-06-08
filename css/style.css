@@ -686,3 +686,19 @@ textarea:focus {
 .satellite-node {
   box-shadow: 0 0 34px rgba(0, 170, 255, 0.25);
 }
+
+/* Tabela de níveis de urgência */
+.urgency-table {
+  overflow: hidden;
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  background: rgba(12, 23, 51, 0.78);
+}
+
+/* Cada linha da tabela */
+.urgency-table [role="row"] {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 1.7fr;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  align-items: center;
+}
