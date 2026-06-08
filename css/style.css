@@ -702,3 +702,20 @@ textarea:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.09);
   align-items: center;
 }
+/* Remove borda da última linha */
+.urgency-table [role="row"]:last-child {
+  border-bottom: 0;
+}
+
+/* Células da tabela */
+.urgency-table span {
+  padding: 1rem;
+  color: var(--cinza);
+}
+
+/* Cabeçalho da tabela */
+.urgency-table .table-head span {
+  color: var(--branco);
+  font-family: "Orbitron", Arial, sans-serif;
+  font-weight: 800;
+}
