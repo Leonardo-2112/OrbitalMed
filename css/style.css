@@ -184,3 +184,38 @@ h3 {
   background: rgba(0, 170, 255, 0.12);
   color: var(--branco);
 }
+
+/* Botão hamburguer (ícone de 3 riscos no mobile) */
+.menu-toggle {
+  display: none;
+  /* escondido no desktop */
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--borda);
+  border-radius: 6px;
+  background: rgba(0, 170, 255, 0.08);
+  cursor: pointer;
+}
+
+/* Os 3 riscos do botão hamburguer */
+.menu-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin: 5px auto;
+  background: var(--branco);
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+/* Animação: quando aberto, os riscos viram um X */
+.menu-toggle.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
