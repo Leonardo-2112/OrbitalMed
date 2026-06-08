@@ -416,3 +416,95 @@ h3 {
   font-family: "Orbitron", Arial, sans-serif;
   font-size: 2rem;
 }
+/* = GRIDS (estrutura de colunas) = */
+
+/* Duas colunas lado a lado */
+.split-layout {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* Versão invertida: coluna menor à esquerda */
+.split-layout.reverse {
+  grid-template-columns: 0.95fr 1.05fr;
+}
+
+/* Espaço entre parágrafos dentro de um bloco */
+.content-block p+p {
+  margin-top: 1rem;
+}
+
+/* Cabeçalho de seção com título e subtítulo */
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 2rem;
+}
+
+.section-heading p {
+  font-size: 1.05rem;
+}
+
+/* Grade de 3 colunas para cards e estatísticas */
+.stats-grid,
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+/* Grade de 2 colunas para comparações */
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+/* Grade de 3 colunas para equipe */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+/* Espaçamento interno dos cards */
+.stat-card,
+.info-card,
+.comparison-card,
+.team-card {
+  padding: 1.4rem;
+}
+
+/* Número grande em destaque (ex: "98%") */
+.stat-card strong {
+  display: block;
+  color: var(--azul-claro);
+  font-family: "Orbitron", Arial, sans-serif;
+  font-size: 2.45rem;
+  line-height: 1;
+  margin-bottom: 0.7rem;
+}
+
+.stat-card span,
+.card-number {
+  color: var(--cinza);
+}
+
+.card-number {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-family: "Orbitron", Arial, sans-serif;
+}
+
+/* Listas de passos ou funcionalidades */
+.steps-list,
+.feature-list {
+  padding-left: 1.25rem;
+  color: var(--cinza);
+}
+
+.steps-list li,
+.feature-list li {
+  margin-bottom: 0.75rem;
+}
