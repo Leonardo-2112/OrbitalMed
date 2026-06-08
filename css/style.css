@@ -539,3 +539,49 @@ h3 {
   color: var(--azul-claro);
   font-weight: 700;
 }
+/* = FAQ — ACORDEÃO = */
+
+/* Lista de perguntas com espaçamento */
+.faq-list {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Botão de cada pergunta */
+.faq-question {
+  width: 100%;
+  padding: 1.15rem 3rem 1.15rem 1.15rem;
+  border: 0;
+  background: transparent;
+  color: var(--branco);
+  cursor: pointer;
+  font-family: "Orbitron", Arial, sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  position: relative;
+}
+
+/* "+" no canto direito da pergunta */
+.faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 1.2rem;
+  color: var(--azul-claro);
+}
+
+/* Quando o item está aberto, troca "+" por "−" */
+.faq-item.open .faq-question::after {
+  content: "−";
+}
+
+/* Resposta começa escondida (altura zero) */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+  /* animação de abrir/fechar */
+}
+
+.faq-answer p {
+  padding: 0 1.15rem 1.15rem;
+}
