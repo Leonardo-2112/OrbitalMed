@@ -585,3 +585,64 @@ h3 {
 .faq-answer p {
   padding: 0 1.15rem 1.15rem;
 }
+
+/* = FORMULÁRIO DE CONTATO = */
+
+/* Duas colunas: formulário maior à esquerda, info à direita */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.contact-form,
+.contact-info,
+.triage-form {
+  padding: 1.5rem;
+}
+
+/* Rótulo acima de cada campo */
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: var(--branco);
+  font-weight: 700;
+}
+
+/* Campos de texto e área de mensagem */
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 0.35rem;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid rgba(0, 170, 255, 0.3);
+  border-radius: 6px;
+  background: rgba(5, 10, 26, 0.78);
+  color: var(--branco);
+  font: inherit;
+  resize: vertical;
+}
+
+/* Borda azul ao focar em um campo */
+input:focus,
+textarea:focus {
+  outline: 2px solid rgba(0, 170, 255, 0.45);
+  border-color: var(--azul);
+}
+
+/* Texto de erro abaixo dos campos */
+.error-message {
+  display: block;
+  min-height: 22px;
+  margin-bottom: 0.45rem;
+  color: #ff7373;
+  font-size: 0.9rem;
+}
+
+/* Mensagem de sucesso após enviar */
+.form-success {
+  margin-top: 1rem;
+  color: #76ffb2;
+  font-weight: 700;
+}
