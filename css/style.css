@@ -336,3 +336,13 @@ h3 {
   color: var(--branco);
 }
 
+/* = HERO DAS PÁGINAS INTERNAS (ex: /sobre, /triagem, /contato) = */
+.page-hero {
+  padding: 45px 0 72px;
+  border-bottom: 1px solid rgba(0, 170, 255, 0.18);
+}
+
+.page-hero p {
+  max-width: 780px;
+  padding: 21px;
+}
