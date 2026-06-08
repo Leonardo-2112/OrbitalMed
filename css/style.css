@@ -380,3 +380,39 @@ h3 {
   font-family: "Orbitron", Arial, sans-serif;
   font-weight: 700;
 }
+
+/* Radar animado (só CSS, sem JS) */
+.radar {
+  width: 210px;
+  aspect-ratio: 1;
+  margin-bottom: 1rem;
+  border: 1px solid var(--azul);
+  border-radius: 50%;
+  background:
+    linear-gradient(40deg, transparent 50%, rgba(0, 170, 255, 0.28) 51%, transparent 52%),
+    repeating-radial-gradient(circle, transparent 0 28px, rgba(0, 170, 255, 0.25) 29px 30px);
+  box-shadow: inset 0 0 30px rgba(0, 170, 255, 0.18), 0 0 28px rgba(0, 170, 255, 0.18);
+}
+
+/* Tela do dispositivo médico (decorativo) */
+.device-screen {
+  width: min(100%, 330px);
+  padding: 2rem;
+  border: 1px solid var(--azul);
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(0, 170, 255, 0.14), rgba(5, 10, 26, 0.9));
+}
+
+.device-screen span,
+.device-screen small {
+  display: block;
+  color: var(--cinza);
+}
+
+.device-screen strong {
+  display: block;
+  margin: 1.2rem 0;
+  color: var(--azul-claro);
+  font-family: "Orbitron", Arial, sans-serif;
+  font-size: 2rem;
+}
