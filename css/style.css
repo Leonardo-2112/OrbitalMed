@@ -301,3 +301,38 @@ h3 {
   gap: 1rem;
   margin-top: 2rem;
 }
+
+/* = BOTÕES = */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0.8rem 1.15rem;
+  border: 1px solid var(--azul);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+/* Sobe levemente ao passar o mouse */
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Botão principal: azul sólido */
+.btn-primary {
+  background: var(--azul);
+  color: #03101f;
+  box-shadow: 0 0 24px rgba(0, 170, 255, 0.34);
+}
+
+/* Botão secundário: apenas contorno */
+.btn-secondary {
+  background: rgba(0, 170, 255, 0.08);
+  color: var(--branco);
+}
+
