@@ -97,15 +97,21 @@ function formularioContato() {
   if (!form) {
     return;
   }
+
   form.addEventListener("submit", function (evento) {
     // Impede o envio padrão do formulário (que recarregaria a página)
     evento.preventDefault();
 
-}
-// Limpa as mensagens de erro anteriores
+    // Limpa as mensagens de erro anteriores
     var erros = form.querySelectorAll(".error-message");
     for (var i = 0; i < erros.length; i++) {
       erros[i].textContent = "";
     }
     document.querySelector("#formSuccess").textContent = "";
+    
+    // Pega o valor de cada campo
+    var nome = form.name.value.trim();
+    var email = form.email.value.trim();
+    var assunto = form.subject.value.trim();
+    var mensagem = form.message.value.trim();
 }
