@@ -151,3 +151,8 @@ function formularioContato() {
       "Mensagem enviada com sucesso. A equipe GaiaTech retornará em breve.";
   });
 }
+
+// Verifica se o email tem o formato básico correto (ex: nome@email.com)
+function emailValido(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
