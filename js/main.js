@@ -156,3 +156,32 @@ function formularioContato() {
 function emailValido(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
+
+/* ----------------------------------
+   TRIAGEM DE SINTOMAS
+   Classifica urgência com base no que o usuário digitou
+   ---------------------------------- */
+
+// Lista de níveis de urgência, do mais grave ao mais leve
+var URGENCIAS = [
+  {
+    nivel: "Crítica",
+    instrucao: "Acionar emergência imediatamente e manter acompanhamento contínuo.",
+    sintomas: ["convulsão", "sangramento intenso", "inconsciência", "inconsciente", "parada respiratória", "não respira", "sem ar"]
+  },
+  {
+    nivel: "Alta",
+    instrucao: "Priorizar atendimento médico remoto e preparar encaminhamento.",
+    sintomas: ["falta de ar", "dor no peito", "desmaio", "confusão", "pressão alta", "dor intensa", "dor forte"]
+  },
+  {
+    nivel: "Média",
+    instrucao: "Solicitar avaliação médica e orientar observação dos sinais.",
+    sintomas: ["febre", "vômito", "diarreia", "dor moderada", "tontura", "calafrio"]
+  },
+  {
+    nivel: "Baixa",
+    instrucao: "Orientar monitoramento, hidratação e retorno se houver piora.",
+    sintomas: ["tosse leve", "coriza", "dor leve", "dor", "cansaço leve", "espirro", "nariz entupido", "nariz congestionado"]
+  }
+];
