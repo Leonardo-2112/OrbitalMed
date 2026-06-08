@@ -1,0 +1,74 @@
+/* ===================================
+        ----- RESPONSIVIDADE -----
+      Adaptações para telas menores
+   =================================== */
+ 
+/* --- Tablet até 992px --- */
+@media (max-width: 992px) {
+  /* Exibe botão hamburguer e esconde menu horizontal */
+  .menu-toggle { display: block; }
+  .nav-menu {
+    position: absolute;
+    top: 74px; left: 0; right: 0;
+    display: none;
+    flex-direction: column;
+    padding: 1rem;
+    border-bottom: 1px solid var(--borda);
+    background: rgba(5,10,26,0.97);
+  }
+  .nav-menu.open { display: flex; }
+  .nav-menu a { padding: 0.9rem 1rem; }
+ 
+  h1 { font-size: 3.6rem; }
+  h2 { font-size: 1.85rem; }
+  .section-space { padding: 76px 0; }
+ 
+  /* Layouts de 2 colunas viram 1 coluna */
+  .split-layout, .split-layout.reverse, .contact-layout { grid-template-columns: 1fr; }
+ 
+  /* Grids de 3 colunas viram 2 */
+  .stats-grid, .cards-grid, .team-grid { grid-template-columns: repeat(2,1fr); }
+ 
+  /* Fluxo de triagem vira vertical */
+  .flow-diagram { grid-template-columns: 1fr; }
+  .flow-arrow { width: 100%; transform: rotate(90deg); }
+}
+
+/* --- Mobile até 768px --- */
+@media (max-width: 768px) {
+  .container, .navbar { width: min(100% - 28px, 720px); }
+  .hero { min-height: 720px; }
+  h1 { font-size: 2.9rem; }
+  .hero-subtitle { font-size: 1.25rem; }
+ 
+  /* Itens em coluna única */
+  .hero-actions, .footer-content, .social-links { flex-direction: column; }
+  .hero-actions .btn { width: 100%; }
+  .stats-grid, .cards-grid, .comparison-grid, .team-grid { grid-template-columns: 1fr; }
+ 
+  /* Tabela de urgência: cada célula em linha própria */
+  .urgency-table [role="row"] { grid-template-columns: 1fr; padding: 0.75rem 0; }
+  .urgency-table span { padding: 0.25rem 1rem; }
+}
+
+/* --- Mobile pequeno (até 480px) --- */
+@media (max-width: 480px) {
+  .navbar { min-height: 66px; }
+  .nav-menu { top: 66px; }
+  .brand { font-size: 1.05rem; }
+  .hero { min-height: 640px; }
+  .page-hero { padding: 86px 0 52px; }
+  .section-space { padding: 58px 0; }
+  h1 { font-size: 2.25rem; }
+  h2 { font-size: 1.55rem; }
+  .hero-text, .page-hero p { font-size: 1rem; }
+  .signal-panel, .device-panel { min-height: 260px; }
+  .radar { width: 160px; }
+  .stat-card strong { font-size: 2rem; }
+ 
+  /* Padding interno dos cards menor */
+  .contact-form, .contact-info, .triage-form,
+  .info-card, .team-card, .comparison-card, .stat-card { padding: 1.1rem; }
+ 
+  .flow-node { min-height: 78px; }
+}
