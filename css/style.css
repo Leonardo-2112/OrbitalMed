@@ -118,3 +118,15 @@ h3 {
   border-block: 1px solid rgba(0, 170, 255, 0.16);
   background: rgba(8, 17, 38, 0.72);
 }
+/* = HEADER E NAVEGAÇÃO = */
+
+/* Cabeçalho fixo no topo da página */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid var(--borda);
+  background: rgba(5, 10, 26, 0.88);
+  backdrop-filter: blur(16px);
+  /* efeito de vidro fosco */
+}
