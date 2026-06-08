@@ -346,3 +346,37 @@ h3 {
   max-width: 780px;
   padding: 21px;
 }
+/* = CARDS E PAINÉIS (componentes visuais) = */
+
+/* Estilo base compartilhado por todos os cards */
+.signal-panel,
+.device-panel,
+.info-card,
+.stat-card,
+.team-card,
+.comparison-card,
+.contact-form,
+.contact-info,
+.triage-form,
+.faq-item {
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  background: rgba(12, 23, 51, 0.78);
+  box-shadow: var(--sombra);
+}
+
+/* Painéis grandes com conteúdo centralizado */
+.signal-panel,
+.device-panel {
+  min-height: 340px;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.signal-panel p {
+  color: var(--branco);
+  font-family: "Orbitron", Arial, sans-serif;
+  font-weight: 700;
+}
