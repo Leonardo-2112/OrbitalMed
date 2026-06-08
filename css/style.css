@@ -848,3 +848,30 @@ textarea:focus {
   justify-content: space-between;
   gap: 1rem;
 }
+/* = ANIMAÇÕES = */
+
+/* Estado inicial: invisível e ligeiramente abaixo */
+.fade-in {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+/* Quando o JS adiciona .visible, o elemento aparece */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animação de entrada do resultado da triagem */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
