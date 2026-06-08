@@ -85,3 +85,12 @@ function faqAcordeao() {
     });
   }
 }
+
+/* ----------------------------------
+   FORMULÁRIO DE CONTATO
+   Valida os campos e mostra mensagem de sucesso
+   ---------------------------------- */
+function formularioContato() {
+  var form = document.querySelector("#contactForm");
+
+}
