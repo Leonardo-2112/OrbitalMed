@@ -99,3 +99,22 @@ h3 {
   font-size: 1.15rem;
   margin-bottom: 0.65rem;
 }
+
+/* ---LAYOUT BASE--- */
+
+/* Centraliza o conteúdo e limita a largura */
+.container {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* Espaçamento padrão entre seções */
+.section-space {
+  padding: 92px 0;
+}
+
+/* Seções com fundo levemente diferente */
+.alt-section {
+  border-block: 1px solid rgba(0, 170, 255, 0.16);
+  background: rgba(8, 17, 38, 0.72);
+}
