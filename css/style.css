@@ -719,3 +719,37 @@ textarea:focus {
   font-family: "Orbitron", Arial, sans-serif;
   font-weight: 800;
 }
+
+/* Cores do nome de cada nível */
+.level-low span.level-label {
+  color: #79ffbd;
+}
+
+.level-medium span.level-label {
+  color: #ffe066;
+}
+
+.level-high span.level-label {
+  color: #ff9f43;
+}
+
+.level-critical span.level-label {
+  color: #ff5c7a;
+}
+
+/* Fundo sutil colorido por linha */
+.level-low {
+  background: rgba(121, 255, 189, 0.04);
+}
+
+.level-medium {
+  background: rgba(255, 224, 102, 0.04);
+}
+
+.level-high {
+  background: rgba(255, 159, 67, 0.04);
+}
+
+.level-critical {
+  background: rgba(255, 92, 122, 0.04);
+}
