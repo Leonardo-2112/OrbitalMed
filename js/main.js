@@ -56,3 +56,32 @@ function menuMobile() {
     });
   }
 }
+
+/* ----------------------------------
+   FAQ — ACORDEÃO
+   Só um item fica aberto por vez
+   ---------------------------------- */
+function faqAcordeao() {
+  var perguntas = document.querySelectorAll(".faq-question");
+
+  for (var i = 0; i < perguntas.length; i++) {
+    perguntas[i].addEventListener("click", function () {
+      var item = this.closest(".faq-item");
+      var resposta = item.querySelector(".faq-answer");
+      var itemEstaAberto = item.classList.contains("open");
+
+      // Fecha todos os itens que estão abertos
+      var itensAbertos = document.querySelectorAll(".faq-item.open");
+      for (var j = 0; j < itensAbertos.length; j++) {
+        itensAbertos[j].classList.remove("open");
+        itensAbertos[j].querySelector(".faq-answer").style.maxHeight = null;
+      }
+
+      // Se o item clicado estava fechado, abre ele
+      if (!itemEstaAberto) {
+        item.classList.add("open");
+        resposta.style.maxHeight = resposta.scrollHeight + "px";
+      }
+    });
+  }
+}
