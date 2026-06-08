@@ -145,4 +145,9 @@ function formularioContato() {
     if (!tudoValido) {
       return;
     }
+       // Tudo certo: limpa o formulário e mostra mensagem de sucesso
+    form.reset();
+    document.querySelector("#formSuccess").textContent =
+      "Mensagem enviada com sucesso. A equipe GaiaTech retornará em breve.";
+  });
 }
