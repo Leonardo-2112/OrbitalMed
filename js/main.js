@@ -97,4 +97,9 @@ function formularioContato() {
   if (!form) {
     return;
   }
+  form.addEventListener("submit", function (evento) {
+    // Impede o envio padrão do formulário (que recarregaria a página)
+    evento.preventDefault();
+
+}
 }
