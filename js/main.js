@@ -202,5 +202,9 @@ function formularioTriagem() {
 
   form.addEventListener("submit", function (evento) {
     evento.preventDefault();
-  }
+
+        // Pega o texto digitado e remove acentos para comparar
+    var textoDigitado = removerAcentos(form.symptoms.value.trim().toLowerCase());
+
+}
 }
