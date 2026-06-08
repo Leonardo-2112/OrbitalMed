@@ -18,3 +18,13 @@
   --sombra: 0 20px 60px rgba(0, 170, 255, 0.14);
   /* sombra suave azulada */
 }
+/*-RESET BÁSICO
+   Remove margens e espaçamentos
+   padrão do navegador-*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
