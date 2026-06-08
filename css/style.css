@@ -753,3 +753,58 @@ textarea:focus {
 .level-critical {
   background: rgba(255, 92, 122, 0.04);
 }
+
+/* Label do nível com ícone ao lado */
+.level-label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+/* Remove padding duplicado na primeira célula */
+.urgency-table [role="row"]:not(.table-head)>span:first-child {
+  padding: 0 0 0 1.1rem;
+}
+
+/* Ícone circular colorido */
+.urgency-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 70%;
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  line-height: 0;
+}
+
+/* Ícone: cor e brilho por nível */
+.icon-low {
+  color: #79ffbd;
+  background: rgba(121, 255, 189, 0.18);
+  box-shadow: 0 0 10px rgba(121, 255, 189, 0.5);
+  font-size: 1.10rem;
+}
+
+.icon-medium {
+  color: #ffe066;
+  background: rgba(255, 224, 102, 0.18);
+  box-shadow: 0 0 10px rgba(255, 224, 102, 0.5);
+  font-size: 1.10rem;
+}
+
+.icon-high {
+  color: #ff9f43;
+  background: rgba(255, 159, 67, 0.18);
+  box-shadow: 0 0 10px rgba(255, 159, 67, 0.5);
+  font-size: 1.10rem;
+}
+
+.icon-critical {
+  background: rgba(255, 92, 122, 0.18);
+  box-shadow: 0 0 10px rgba(255, 92, 122, 0.5);
+  font-size: 0.95rem;
+}
