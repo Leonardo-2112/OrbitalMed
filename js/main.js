@@ -24,3 +24,22 @@ function menuMobile() {
   if (!botao || !menu) {
     return;
   }
+
+  // Quando o botão for clicado, abre ou fecha o menu
+  botao.addEventListener("click", function () {
+    var menuEstaAberto = menu.classList.contains("open");
+
+    if (menuEstaAberto) {
+      // Menu está aberto → fecha
+      menu.classList.remove("open");
+      botao.classList.remove("open");
+      botao.setAttribute("aria-expanded", "false");
+      botao.setAttribute("aria-label", "Abrir menu");
+    } else {
+      // Menu está fechado → abre
+      menu.classList.add("open");
+      botao.classList.add("open");
+      botao.setAttribute("aria-expanded", "true");
+      botao.setAttribute("aria-label", "Fechar menu");
+    }
+  });
