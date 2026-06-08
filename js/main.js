@@ -206,5 +206,11 @@ function formularioTriagem() {
         // Pega o texto digitado e remove acentos para comparar
     var textoDigitado = removerAcentos(form.symptoms.value.trim().toLowerCase());
 
+    // Se o campo estiver vazio, pede para digitar algo
+    if (!textoDigitado) {
+      resultado.className = "triage-result show";
+      resultado.innerHTML = "<strong>Digite ao menos um sintoma para realizar a simulação.</strong>";
+      return;
+    }
 }
 }
