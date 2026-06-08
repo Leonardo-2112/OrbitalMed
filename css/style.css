@@ -1,0 +1,20 @@
+/* ---VARIÁVEIS (cores e sombras globais)--- */
+:root {
+  --bg: #050a1a;
+  /* fundo principal (quase preto azulado) */
+  --bg-soft: #081126;
+  /* fundo levemente mais claro */
+  --bg-card: #0c1733;
+  /* fundo dos cartões */
+  --azul: #00aaff;
+  /* azul principal */
+  --azul-claro: #40c8ff;
+  /* azul mais claro (destaques) */
+  --branco: #ffffff;
+  --cinza: #cccccc;
+  /* texto secundário */
+  --borda: rgba(0, 170, 255, 0.28);
+  /* bordas azuis semitransparentes */
+  --sombra: 0 20px 60px rgba(0, 170, 255, 0.14);
+  /* sombra suave azulada */
+}
