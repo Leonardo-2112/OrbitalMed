@@ -185,3 +185,22 @@ var URGENCIAS = [
     sintomas: ["tosse leve", "coriza", "dor leve", "dor", "cansaço leve", "espirro", "nariz entupido", "nariz congestionado"]
   }
 ];
+
+// Remove acentos do texto para a comparação não falhar (ex: "febre" == "febre")
+function removerAcentos(texto) {
+  return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
+function formularioTriagem() {
+  var form = document.querySelector("#triageForm");
+  var resultado = document.querySelector("#triageResult");
+
+  // Se os elementos não existirem na página, para aqui
+  if (!form || !resultado) {
+    return;
+  }
+
+  form.addEventListener("submit", function (evento) {
+    evento.preventDefault();
+  }
+}
