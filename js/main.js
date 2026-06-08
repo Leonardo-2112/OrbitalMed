@@ -102,4 +102,10 @@ function formularioContato() {
     evento.preventDefault();
 
 }
+// Limpa as mensagens de erro anteriores
+    var erros = form.querySelectorAll(".error-message");
+    for (var i = 0; i < erros.length; i++) {
+      erros[i].textContent = "";
+    }
+    document.querySelector("#formSuccess").textContent = "";
 }
