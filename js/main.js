@@ -114,4 +114,35 @@ function formularioContato() {
     var email = form.email.value.trim();
     var assunto = form.subject.value.trim();
     var mensagem = form.message.value.trim();
+        // Marca se tudo está válido
+    var tudoValido = true;
+
+    // Verifica se cada campo foi preenchido
+    if (!nome) {
+      document.querySelector('[data-error-for="name"]').textContent = "Informe seu nome.";
+      tudoValido = false;
+    }
+
+    if (!email) {
+      document.querySelector('[data-error-for="email"]').textContent = "Informe seu email.";
+      tudoValido = false;
+    } else if (!emailValido(email)) {
+      document.querySelector('[data-error-for="email"]').textContent = "Informe um email válido.";
+      tudoValido = false;
+    }
+
+    if (!assunto) {
+      document.querySelector('[data-error-for="subject"]').textContent = "Informe o assunto.";
+      tudoValido = false;
+    }
+
+    if (!mensagem) {
+      document.querySelector('[data-error-for="message"]').textContent = "Escreva sua mensagem.";
+      tudoValido = false;
+    }
+
+    // Se algum campo inválido, para aqui sem enviar
+    if (!tudoValido) {
+      return;
+    }
 }
