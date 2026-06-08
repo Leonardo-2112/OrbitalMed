@@ -835,3 +835,16 @@ textarea:focus {
 .comparison-card.featured {
   border-color: var(--azul);
 }
+/* = FOOTER = */
+.site-footer {
+  padding: 2rem 0;
+  border-top: 1px solid var(--borda);
+  background: rgba(5, 10, 26, 0.92);
+}
+
+/* Logo e texto lado a lado */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
