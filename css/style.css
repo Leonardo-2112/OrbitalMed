@@ -808,3 +808,30 @@ textarea:focus {
   box-shadow: 0 0 10px rgba(255, 92, 122, 0.5);
   font-size: 0.95rem;
 }
+
+/* Caixinha de resultado da triagem (começa escondida) */
+.triage-result {
+  display: none;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--borda);
+  background: rgba(5, 10, 26, 0.82);
+}
+
+/* Quando o JS adiciona .show, o resultado aparece com animação */
+.triage-result.show {
+  display: block;
+  animation: aparecer 0.35s ease both;
+}
+
+.triage-result strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-family: "Orbitron", Arial, sans-serif;
+}
+
+/* Card de comparação com borda azul em destaque */
+.comparison-card.featured {
+  border-color: var(--azul);
+}
