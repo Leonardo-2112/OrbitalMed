@@ -43,3 +43,30 @@ a {
 p {
   color: var(--cinza);
 }
+
+/*-FUNDO DO SITE
+   Gradiente escuro + estrelas falsas
+   feitas com pontinhos repetidos-*/
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #050a1a 0%, #061024 52%, #050a1a 100%);
+  color: var(--branco);
+  font-family: "Exo 2", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Camada de estrelas (fica atrás de tudo) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  /* ocupa a tela inteira */
+  pointer-events: none;
+  /* não interfere nos cliques */
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.68) 1px, transparent 1px),
+    radial-gradient(circle, rgba(0, 170, 255, 0.42) 1px, transparent 1px);
+  background-size: 92px 92px, 137px 137px;
+  opacity: 0.22;
+  z-index: -1;
+}
