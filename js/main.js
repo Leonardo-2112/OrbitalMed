@@ -93,4 +93,8 @@ function faqAcordeao() {
 function formularioContato() {
   var form = document.querySelector("#contactForm");
 
+  // Se o formulário não existir na página, para aqui
+  if (!form) {
+    return;
+  }
 }
