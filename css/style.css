@@ -270,3 +270,34 @@ h3 {
   text-align: center;
   z-index: 1;
 }
+
+/* Texto pequeno acima do título principal */
+.eyebrow {
+  color: var(--azul-claro);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 0.9rem;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  margin-top: 1rem;
+  color: var(--branco);
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+
+.hero-text {
+  max-width: 620px;
+  margin: 0.85rem auto 0;
+  font-size: 1.18rem;
+}
+
+/* Área dos botões do hero */
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
