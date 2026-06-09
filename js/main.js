@@ -296,4 +296,24 @@ function scrollSuave() {
   // Pega todos os links que apontam para uma âncora interna (começam com #)
   var links = document.querySelectorAll('a[href^="#"]');
 
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function (evento) {
+      // Descobre para qual seção esse link aponta
+      var idDestino = this.getAttribute("href");
+      var secaoDestino = document.querySelector(idDestino);
+
+      // Se a seção não existir na página, não faz nada
+      if (!secaoDestino) {
+        return;
+      }
+
+      // Impede o comportamento padrão (pular direto sem animação)
+      evento.preventDefault();
+
+      // Rola até a seção com animação suave
+      secaoDestino.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+}
+
 
