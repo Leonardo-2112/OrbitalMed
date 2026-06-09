@@ -259,3 +259,11 @@ function animacaoFadeIn() {
   if (!elementos.length) {
     return;
   }
+
+    // Se o navegador não suportar o recurso moderno, mostra tudo de uma vez
+  if (!("IntersectionObserver" in window)) {
+    for (var i = 0; i < elementos.length; i++) {
+      elementos[i].classList.add("visible");
+    }
+    return;
+  }
