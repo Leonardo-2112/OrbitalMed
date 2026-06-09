@@ -212,5 +212,26 @@ function formularioTriagem() {
       resultado.innerHTML = "<strong>Digite ao menos um sintoma para realizar a simulação.</strong>";
       return;
     }
+
+       // Percorre cada nível de urgência e vê se algum sintoma foi digitado
+    var nivelEncontrado = null;
+
+    for (var i = 0; i < URGENCIAS.length; i++) {
+      var urgencia = URGENCIAS[i];
+
+      for (var j = 0; j < urgencia.sintomas.length; j++) {
+        var sintoma = removerAcentos(urgencia.sintomas[j]);
+
+        if (textoDigitado.includes(sintoma)) {
+          nivelEncontrado = urgencia;
+          break; // Encontrou um sintoma nesse nível, não precisa continuar
+        }
+      }
+
+      if (nivelEncontrado) {
+        break; // Já achou o nível mais grave, para a busca
+      }
+    }
+
 }
 }
