@@ -264,7 +264,7 @@ O projeto utiliza CSS responsivo e menu mobile para garantir boa navegação em 
 | Leonardo Afonço Sousa | 573982 | 1TDSPV | [GitHub](https://github.com/Leonardo-2112) | [LinkedIn](https://www.linkedin.com/in/leonardoafoncosousa/) |
 | Syang Cristina Gomes Souza | 569259 | 1TDSPV | [GitHub](https://github.com/SyangSouzaa) | [LinkedIn](https://www.linkedin.com/in/syang-souza/) |
 | Matheus Jones Sousa de Freitas | 573559 | 1TDSPV | [GitHub](https://github.com/Matheus-Jones) | [LinkedIn](https://www.linkedin.com/in/matheus-jones10/) |
-| Vitor Gonçalves de Souza | 569023 | 1TDSPV | [GitHub](https://github.com/v1torceleste) | [LinkedIn](Ihttps://www.linkedin.com/in/vitor-souza-39aa422b4/) |
+| Vitor Gonçalves de Souza | 569023 | 1TDSPV | [GitHub](https://github.com/v1torceleste) | [LinkedIn](https://www.linkedin.com/in/vitor-souza-39aa422b4/) |
 | João Machado Nascimento | 572364 | 1TDSPV | [GitHub](https://github.com/MachadoJN) | [LinkedIn](https://www.linkedin.com/in/jo%C3%A3o-machado-493178300) |
 
 ---
