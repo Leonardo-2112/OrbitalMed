@@ -233,5 +233,17 @@ function formularioTriagem() {
       }
     }
 
-}
+        // Mostra o resultado na tela
+    resultado.className = "triage-result show";
+
+    if (nivelEncontrado) {
+      resultado.innerHTML =
+        "<strong>Nível de urgência: " + nivelEncontrado.nivel + "</strong>" +
+        "<p>" + nivelEncontrado.instrucao + "</p>";
+    } else {
+      resultado.innerHTML =
+        "<strong>Sintomas não encontrados.</strong>" +
+        "<p>Nenhum sintoma cadastrado foi identificado. Verifique a grafia e tente novamente.</p>";
+    }
+  });
 }
