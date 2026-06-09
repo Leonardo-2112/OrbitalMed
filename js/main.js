@@ -247,3 +247,15 @@ function formularioTriagem() {
     }
   });
 }
+
+/* ----------------------------------
+   ANIMAÇÃO FADE-IN
+   Elementos com .fade-in aparecem suavemente ao entrar na tela
+   ---------------------------------- */
+function animacaoFadeIn() {
+  var elementos = document.querySelectorAll(".fade-in");
+
+  // Se não houver elementos com .fade-in na página, para aqui
+  if (!elementos.length) {
+    return;
+  }
