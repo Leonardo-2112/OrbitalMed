@@ -267,3 +267,24 @@ function animacaoFadeIn() {
     }
     return;
   }
+
+    // Cria um "observador" que detecta quando um elemento aparece na tela
+  var observador = new IntersectionObserver(function (entradas) {
+    for (var i = 0; i < entradas.length; i++) {
+      var entrada = entradas[i];
+
+      if (entrada.isIntersecting) {
+        // Elemento entrou na tela: adiciona a classe que faz aparecer
+        entrada.target.classList.add("visible");
+        // Para de observar esse elemento (já animou, não precisa mais)
+        observador.unobserve(entrada.target);
+      }
+    }
+  }, { threshold: 0.12 });
+
+    // Começa a observar cada elemento
+  for (var i = 0; i < elementos.length; i++) {
+    observador.observe(elementos[i]);
+  }
+}
+
