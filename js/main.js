@@ -288,3 +288,12 @@ function animacaoFadeIn() {
   }
 }
 
+/* ----------------------------------
+   SCROLL SUAVE
+   Ao clicar em links internos (#secao), rola a página suavemente
+   ---------------------------------- */
+function scrollSuave() {
+  // Pega todos os links que apontam para uma âncora interna (começam com #)
+  var links = document.querySelectorAll('a[href^="#"]');
+
+
